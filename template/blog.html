@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="{{ site.language }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ page.description or site.description }}">
+    <meta name="author" content="{{ site.author }}">
+    <meta name="generator" content="{{ site.generator }}">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ page.base_path }}assets/css/style.css">
+</head>
+<body class="blog-post">
+    <header>
+        <nav>
+            <h1>{{ site.title }}</h1>
+            <ul>
+                <li><a href="{{ page.base_path }}index.html">Home</a></li>
+                <li><a href="{{ page.base_path }}blog/index.html">Blog</a></li>
+                <li><a href="{{ page.base_path }}about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="blog-container">
+        <article class="blog-article">
+            <!-- Metadata del post -->
+            <div class="post-meta">
+                {% if page.date %}
+                <time datetime="{{ page.date }}">{{ page.date }}</time>
+                {% endif %}
+                {% if page.author %}
+                <span class="author">di {{ page.author }}</span>
+                {% endif %}
+                {% if page.tags %}
+                <div class="tags">
+                    {% for tag in page.tags %}
+                    <span class="tag">{{ tag }}</span>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+
+            <!-- Titolo -->
+            <h1 class="post-title">{{ page.title }}</h1>
+
+            <!-- Contenuto -->
+            <div class="content post-content">
+                {{ content }}
+            </div>
+
+            <!-- Navigazione post -->
+            <nav class="post-navigation">
+                <a href="{{ page.base_path }}blog/index.html" class="back-to-blog">← Tutti i post</a>
+            </nav>
+        </article>
+
+        <!-- Sidebar opzionale -->
+        <aside class="blog-sidebar">
+            <div class="widget">
+                <h3>Categorie</h3>
+                <ul>
+                    <li><a href="{{ page.base_path }}blog/index.html">Tutti i post</a></li>
+                    <li><a href="{{ page.base_path }}blog/2025/index.html">Archivio 2025</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 {{ site.author }}. Tutti i diritti riservati.</p>
+    </footer>
+
+    <script src="{{ page.base_path }}assets/js/main.js"></script>
+</body>
+</html>

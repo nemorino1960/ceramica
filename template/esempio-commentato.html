@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="{{ site.language }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    {# 
+    OR operator: usa page.description se esiste, 
+    altrimenti usa site.description 
+    #}
+    <meta name="description" content="{{ page.description or site.description }}">
+    
+    <meta name="author" content="{{ site.author }}">
+    
+    {# Stampa due variabili separate da trattino #}
+    <title>{{ page.title }} - {{ site.title }}</title>
+    
+    {# page.base_path viene calcolato automaticamente in base alla profondità #}
+    <link rel="stylesheet" href="{{ page.base_path }}assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            {# Variabile site.title viene da config.json #}
+            <h1>{{ site.title }}</h1>
+            
+            <ul>
+                {# Link con path relativo corretto per qualsiasi profondità #}
+                <li><a href="{{ page.base_path }}index.html">Home</a></li>
+                <li><a href="{{ page.base_path }}blog/index.html">Blog</a></li>
+                <li><a href="{{ page.base_path }}about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            {# 
+            Metadata del post - tutto condizionale 
+            Mostra solo se le variabili esistono nel frontmatter
+            #}
+            <div class="post-meta">
+                {# IF: mostra solo se page.date è definito #}
+                {% if page.date %}
+                <time datetime="{{ page.date }}">{{ page.date }}</time>
+                {% endif %}
+                
+                {# IF: mostra solo se page.author è definito #}
+                {% if page.author %}
+                <span class="author">di {{ page.author }}</span>
+                {% endif %}
+                
+                {# IF: mostra div solo se esistono tags #}
+                {% if page.tags %}
+                <div class="tags">
+                    {# 
+                    FOR LOOP: itera su ogni tag in page.tags
+                    Se tags = "python, html, css", crea 3 span
+                    #}
+                    {% for tag in page.tags %}
+                    <span class="tag">{{ tag }}</span>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+
+            {# Titolo della pagina dal frontmatter #}
+            <h1>{{ page.title }}</h1>
+
+            {# 
+            Contenuto HTML generato dal Markdown
+            Questa è la variabile più importante!
+            #}
+            <div class="content">
+                {{ content }}
+            </div>
+
+            {# 
+            Sezione condizionale: mostra solo se c'è una gallery
+            Esempio frontmatter:
+            gallery:
+              - /assets/img1.jpg
+              - /assets/img2.jpg
+            #}
+            {% if page.gallery %}
+            <div class="gallery">
+                <h2>Galleria</h2>
+                {# Loop attraverso ogni immagine #}
+                {% for image in page.gallery %}
+                <figure>
+                    <img src="{{ page.base_path }}{{ image }}" 
+                         alt="Immagine {{ loop.index }}">
+                    {# loop.index è una variabile speciale: numero iterazione (1, 2, 3...) #}
+                    <figcaption>Immagine {{ loop.index }} di {{ loop.length }}</figcaption>
+                </figure>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            {# 
+            IF/ELIF/ELSE: mostra badge diverso in base allo stato
+            Esempio frontmatter: status: pubblicato
+            #}
+            {% if page.status == 'pubblicato' %}
+            <span class="badge badge-green">✓ Pubblicato</span>
+            {% elif page.status == 'bozza' %}
+            <span class="badge badge-yellow">📝 Bozza</span>
+            {% elif page.status == 'archiviato' %}
+            <span class="badge badge-gray">📦 Archiviato</span>
+            {% else %}
+            <span class="badge badge-blue">📄 Stato Sconosciuto</span>
+            {% endif %}
+
+            {# 
+            Mostra sezione "Articoli Correlati" solo se definiti
+            Esempio frontmatter:
+            related:
+              - /blog/post-1.html
+              - /blog/post-2.html
+            #}
+            {% if page.related %}
+            <section class="related">
+                <h2>Articoli Correlati</h2>
+                <ul>
+                    {% for link in page.related %}
+                    <li>
+                        <a href="{{ page.base_path }}{{ link }}">
+                            {# Filtro: sostituisce .html e / con spazi, poi title case #}
+                            {{ link | replace('.html', '') | replace('/', ' ') | title }}
+                        </a>
+                        
+                        {# Mostra badge "Primo" sul primo elemento #}
+                        {% if loop.first %}
+                        <span class="badge-small">Consigliato</span>
+                        {% endif %}
+                    </li>
+                    {# ELSE del loop: mostrato solo se array vuoto #}
+                    {% else %}
+                    <li>Nessun articolo correlato</li>
+                    {% endfor %}
+                </ul>
+            </section>
+            {% endif %}
+
+            {# 
+            Breadcrumb dinamico basato su profondità
+            #}
+            <nav class="breadcrumb">
+                <a href="{{ page.base_path }}index.html">Home</a>
+                
+                {# Se esiste categoria, mostra link #}
+                {% if page.category %}
+                →
+                <a href="{{ page.base_path }}{{ page.category }}/index.html">
+                    {# Filtro title: prima lettera maiuscola #}
+                    {{ page.category | title }}
+                </a>
+                {% endif %}
+                
+                {# Se esiste sottocategoria, mostra link #}
+                {% if page.subcategory %}
+                →
+                <span>{{ page.subcategory | title }}</span>
+                {% endif %}
+                
+                {# Pagina corrente (sempre mostrato) #}
+                → <strong>{{ page.title }}</strong>
+            </nav>
+
+            {# 
+            Esempio di filtri concatenati
+            #}
+            <div class="slug">
+                {# lower: minuscolo, replace: sostituisce spazi con trattini #}
+                URL: {{ page.title | lower | replace(' ', '-') | replace('à', 'a') }}
+            </div>
+
+            {# 
+            Esempio con default filter
+            Se page.reading_time non esiste, usa "5 minuti"
+            #}
+            <div class="reading-time">
+                ⏱️ Tempo di lettura: {{ page.reading_time | default("5 minuti") }}
+            </div>
+
+            {# 
+            Tronca descrizione a 100 caratteri
+            #}
+            <p class="excerpt">
+                {{ page.description | truncate(100) }}
+            </p>
+
+            {# 
+            Operatori logici AND/OR
+            #}
+            {% if page.featured and page.published and not page.draft %}
+            <div class="featured-badge">
+                ⭐ Articolo in evidenza!
+            </div>
+            {% endif %}
+
+            {# 
+            Test: verifica se variabile è definita
+            #}
+            {% if page.custom_field is defined %}
+            <div>Campo custom: {{ page.custom_field }}</div>
+            {% endif %}
+
+            {# 
+            Join: unisce array con separatore
+            Esempio: tags = ["python", "html"] → "python, html"
+            #}
+            {% if page.tags %}
+            <p>Tags: {{ page.tags | join(", ") }}</p>
+            {% endif %}
+
+            {# Link di navigazione #}
+            <nav class="post-nav">
+                <a href="{{ page.base_path }}blog/index.html" class="back">
+                    ← Torna al Blog
+                </a>
+            </nav>
+        </article>
+
+        {# Sidebar opzionale #}
+        <aside>
+            <h3>Informazioni</h3>
+            <p>Autore: {{ site.author }}</p>
+            
+            {# 
+            Mostra numero totale di tag (length filter)
+            #}
+            {% if page.tags %}
+            <p>Numero tag: {{ page.tags | length }}</p>
+            {% endif %}
+        </aside>
+    </main>
+
+    <footer>
+        {# Variabile site.author da config.json #}
+        <p>&copy; 2025 {{ site.author }}. Tutti i diritti riservati.</p>
+    </footer>
+
+    {# JavaScript con path relativo #}
+    <script src="{{ page.base_path }}assets/js/main.js"></script>
+</body>
+</html>

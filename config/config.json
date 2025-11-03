@@ -1,0 +1,23 @@
+{
+  "site": {
+    "title": "Il Mio Sito",
+    "description": "Un sito statico generato con Ceramica",
+    "author": "nemorino60",
+    "base_url": "http://localhost:8000",
+    "language": "it",
+    "generator": "Ceramica v1.0.0"
+  },
+  "paths": {
+    "pages": "pages",
+    "templates": "template",
+    "assets": "assets",
+    "resources": "resources",
+    "deploy": "deploy",
+    "debug": "debug"
+  },
+  "build": {
+    "copy_assets": true,
+    "minify": false,
+    "generate_sitemap": true
+  }
+}
