@@ -2,7 +2,7 @@ name: Feature Request
 about: Suggerisci una nuova funzionalità per Ceramica
 title: '[FEATURE] '
 labels: enhancement
-assignees: nemorino60
+assignees: nemorino1960
 
 ---
 

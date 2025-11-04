@@ -4,7 +4,7 @@
 
 Versione: 1.0.0  
 Data Rilascio: 03 novembre 2025  
-Autore: nemorino60  
+Autore: nemorino1960  
 Licenza: MIT  
 
 ## Descrizione
@@ -19,7 +19,7 @@ Il nome "Ceramica" richiama l'arte della ceramica, dove si modellano e si cuocon
 
 Ceramica è stato sviluppato utilizzando un approccio moderno di **pair programming con AI**:
 
-- **Visione e Direzione:** nemorino60 ha concepito il progetto, definito le specifiche, preso tutte le decisioni architetturali e di design
+- **Visione e Direzione:** nemorino1960 ha concepito il progetto, definito le specifiche, preso tutte le decisioni architetturali e di design
 - **Implementazione:** Assistenza AI (GitHub Copilot + Claude 3.5 Sonnet) per codice e documentazione
 - **Validazione:** Ogni feature è stata testata e approvata dall'autore
 

@@ -3,15 +3,15 @@
 Ceramica - Static Site Generator
 Un semplice generatore che converte Markdown in HTML utilizzando template Jinja2
 
-Version: 1.0.0
-Author: nemorino60
-Date: 2025-11-03
+Version: 1.0.1
+Author: nemorino1960
+Date: 2025-11-04
 License: MIT
 """
 
-__version__ = "1.0.0"
-__author__ = "nemorino60"
-__date__ = "2025-11-03"
+__version__ = "1.0.1"
+__author__ = "nemorino1960"
+__date__ = "2025-11-04"
 
 import os
 import json

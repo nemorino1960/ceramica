@@ -6,7 +6,7 @@ La sicurezza di Ceramica è importante. Se scopri una vulnerabilità di sicurezz
 
 ### Come Segnalare
 
-Invia un'email a: **nemorino60@[tua-email]** con:
+Invia un'email a: **nemorino1960@[tua-email]** con:
 
 - Descrizione della vulnerabilità
 - Passi per riprodurla

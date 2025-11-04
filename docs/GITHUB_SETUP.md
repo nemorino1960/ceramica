@@ -45,7 +45,7 @@ git commit -m "Initial commit: Ceramica v1.0.0
 
 ```bash
 # Aggiungi remote (sostituisci se necessario)
-git remote add origin https://github.com/nemorino60/ceramica.git
+git remote add origin https://github.com/nemorino1960/ceramica.git
 
 # Verifica remote
 git remote -v
@@ -59,7 +59,7 @@ git push -u origin main
 
 ### 4. Verifica su GitHub
 
-Vai su https://github.com/nemorino60/ceramica e verifica che:
+Vai su https://github.com/nemorino1960/ceramica e verifica che:
 - ✅ Tutti i file siano presenti
 - ✅ README.md sia visualizzato correttamente
 - ✅ Licenza sia riconosciuta
@@ -72,7 +72,7 @@ Per pubblicare automaticamente il sito:
 1. Vai su **Settings** > **Pages**
 2. Source: **GitHub Actions**
 3. Il workflow `.github/workflows/pages.yml` farà il deploy automatico
-4. Il sito sarà disponibile su: `https://nemorino60.github.io/ceramica`
+4. Il sito sarà disponibile su: `https://nemorino1960.github.io/ceramica`
 
 ### 6. Crea il Primo Release
 
@@ -180,7 +180,7 @@ Quando rilasci una nuova versione:
 ### Errore: remote origin already exists
 ```bash
 git remote remove origin
-git remote add origin https://github.com/nemorino60/ceramica.git
+git remote add origin https://github.com/nemorino1960/ceramica.git
 ```
 
 ### Errore: rejected (non-fast-forward)
@@ -221,4 +221,4 @@ Se hai problemi:
 
 **Buona pubblicazione! 🚀**
 
-Una volta pubblicato, condividi il link: https://github.com/nemorino60/ceramica
+Una volta pubblicato, condividi il link: https://github.com/nemorino1960/ceramica
