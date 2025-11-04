@@ -39,7 +39,7 @@ ceramica/
 
 1. **Clona o crea il progetto**
    ```bash
-   cd /Users/nemorino/MEGA/IPERNOTES/WEBDEV/ceramica
+   cd /Users/nemorino/webdev/ceramica
    ```
 
 2. **Crea un ambiente virtuale (opzionale ma raccomandato)**
