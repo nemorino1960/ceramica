@@ -2,7 +2,7 @@ name: Bug Report
 about: Segnala un bug per aiutarci a migliorare Ceramica
 title: '[BUG] '
 labels: bug
-assignees: nemorino60
+assignees: nemorino1960
 
 ---
 

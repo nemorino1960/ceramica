@@ -6,7 +6,7 @@ Prima di tutto, grazie per il tuo interesse nel contribuire a Ceramica! 🏺
 
 ### 🐛 Segnalare Bug
 
-Se trovi un bug, apri una [Issue](https://github.com/nemorino60/ceramica/issues) con:
+Se trovi un bug, apri una [Issue](https://github.com/nemorino1960/ceramica/issues) con:
 
 - **Titolo chiaro** che descrive il problema
 - **Descrizione dettagliata** del bug
@@ -19,7 +19,7 @@ Se trovi un bug, apri una [Issue](https://github.com/nemorino60/ceramica/issues)
 
 Per proporre una nuova funzionalità:
 
-1. Apri una [Issue](https://github.com/nemorino60/ceramica/issues)
+1. Apri una [Issue](https://github.com/nemorino1960/ceramica/issues)
 2. Usa il tag `enhancement`
 3. Descrivi la funzionalità e il caso d'uso
 4. Discuti l'implementazione con i maintainer
@@ -117,8 +117,8 @@ Cerchiamo contributi in:
 
 ## 💬 Comunicazione
 
-- Per domande generali, usa le [Discussions](https://github.com/nemorino60/ceramica/discussions)
-- Per bug e feature, usa le [Issues](https://github.com/nemorino60/ceramica/issues)
+- Per domande generali, usa le [Discussions](https://github.com/nemorino1960/ceramica/discussions)
+- Per bug e feature, usa le [Issues](https://github.com/nemorino1960/ceramica/issues)
 - Sii rispettoso e costruttivo
 
 ## 📄 Licenza
@@ -131,4 +131,4 @@ Ogni contributo, grande o piccolo, è apprezzato! Grazie per aiutare a rendere C
 
 ---
 
-**Domande?** Apri una [Discussion](https://github.com/nemorino60/ceramica/discussions) o contatta [@nemorino60](https://github.com/nemorino60)
+**Domande?** Apri una [Discussion](https://github.com/nemorino1960/ceramica/discussions) o contatta [@nemorino1960](https://github.com/nemorino1960)

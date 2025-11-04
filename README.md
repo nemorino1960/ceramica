@@ -4,11 +4,11 @@
 
 Un generatore di siti statici minimale scritto in Python che converte file Markdown in HTML usando template Jinja2.
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/nemorino60/ceramica/releases)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/nemorino1960/ceramica/releases)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.7+-yellow.svg)](https://www.python.org/)
-[![GitHub issues](https://img.shields.io/github/issues/nemorino60/ceramica)](https://github.com/nemorino60/ceramica/issues)
-[![GitHub stars](https://img.shields.io/github/stars/nemorino60/ceramica)](https://github.com/nemorino60/ceramica/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/nemorino1960/ceramica)](https://github.com/nemorino1960/ceramica/issues)
+[![GitHub stars](https://img.shields.io/github/stars/nemorino1960/ceramica)](https://github.com/nemorino1960/ceramica/stargazers)
 
 > 🏺 Come un artigiano trasforma l'argilla in ceramica, Ceramica trasforma il Markdown in siti web eleganti.
 
@@ -265,7 +265,7 @@ Possibili estensioni:
 Ceramica è stato sviluppato con l'assistenza di GitHub Copilot e AI (Claude 3.5 Sonnet) per accelerare l'implementazione e la documentazione. 
 
 **Tuttavia:**
-- L'architettura e il design sono di **nemorino60**
+- L'architettura e il design sono di **nemorino1960**
 - Tutte le decisioni funzionali sono state prese dall'autore
 - Il progetto è stato concepito, diretto e validato dall'autore
 - Il nome "Ceramica" e la filosofia del progetto sono originali
@@ -289,33 +289,33 @@ python build.py --version
 
 Questo progetto è rilasciato sotto licenza [MIT](LICENSE).
 
-Copyright (c) 2025 nemorino60
+Copyright (c) 2025 nemorino1960
 
 ## 🤝 Contributi
 
 I contributi sono benvenuti! Leggi la [guida per contribuire](CONTRIBUTING.md).
 
-- 🐛 [Segnala un bug](https://github.com/nemorino60/ceramica/issues/new?template=bug_report.md)
-- ✨ [Richiedi una feature](https://github.com/nemorino60/ceramica/issues/new?template=feature_request.md)
-- 💬 [Discussioni](https://github.com/nemorino60/ceramica/discussions)
-- ⭐ [Metti una stella](https://github.com/nemorino60/ceramica) se ti piace il progetto!
+- 🐛 [Segnala un bug](https://github.com/nemorino1960/ceramica/issues/new?template=bug_report.md)
+- ✨ [Richiedi una feature](https://github.com/nemorino1960/ceramica/issues/new?template=feature_request.md)
+- 💬 [Discussioni](https://github.com/nemorino1960/ceramica/discussions)
+- ⭐ [Metti una stella](https://github.com/nemorino1960/ceramica) se ti piace il progetto!
 
 ## 🔗 Link Utili
 
-- 📦 [Repository GitHub](https://github.com/nemorino60/ceramica)
-- 📋 [Releases](https://github.com/nemorino60/ceramica/releases)
-- 📚 [Documentazione](https://github.com/nemorino60/ceramica/tree/main/docs)
-- 🐛 [Issues](https://github.com/nemorino60/ceramica/issues)
-- 💬 [Discussions](https://github.com/nemorino60/ceramica/discussions)
-- 👤 [Profilo Autore](https://github.com/nemorino60)
+- 📦 [Repository GitHub](https://github.com/nemorino1960/ceramica)
+- 📋 [Releases](https://github.com/nemorino1960/ceramica/releases)
+- 📚 [Documentazione](https://github.com/nemorino1960/ceramica/tree/main/docs)
+- 🐛 [Issues](https://github.com/nemorino1960/ceramica/issues)
+- 💬 [Discussions](https://github.com/nemorino1960/ceramica/discussions)
+- 👤 [Profilo Autore](https://github.com/nemorino1960)
 
 ## 📞 Supporto
 
 Se hai bisogno di aiuto:
 1. Consulta la [documentazione](docs/README.md)
-2. Cerca nelle [issues esistenti](https://github.com/nemorino60/ceramica/issues)
-3. Apri una [nuova issue](https://github.com/nemorino60/ceramica/issues/new)
-4. Partecipa alle [discussions](https://github.com/nemorino60/ceramica/discussions)
+2. Cerca nelle [issues esistenti](https://github.com/nemorino1960/ceramica/issues)
+3. Apri una [nuova issue](https://github.com/nemorino1960/ceramica/issues/new)
+4. Partecipa alle [discussions](https://github.com/nemorino1960/ceramica/discussions)
 
 ---
 
@@ -325,7 +325,7 @@ Se hai bisogno di aiuto:
 
 *Modella il tuo sito con eleganza*
 
-Fatto con ❤️ da [nemorino60](https://github.com/nemorino60)
+Fatto con ❤️ da [nemorino1960](https://github.com/nemorino1960)
 
 [⬆ Torna su](#ceramica-)
 

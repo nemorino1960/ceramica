@@ -2,10 +2,10 @@
   "site": {
     "title": "Il Mio Sito",
     "description": "Un sito statico generato con Ceramica",
-    "author": "nemorino60",
+    "author": "nemorino1960",
     "base_url": "http://localhost:8000",
     "language": "it",
-    "generator": "Ceramica v1.0.0"
+    "generator": "Ceramica v1.0.1"
   },
   "paths": {
     "pages": "pages",

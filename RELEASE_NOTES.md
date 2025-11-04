@@ -4,7 +4,7 @@
 
 **Versione:** 1.0.0  
 **Data:** 03 novembre 2025  
-**Autore:** nemorino60  
+**Autore:** nemorino1960  
 **Licenza:** MIT  
 **Stato:** Stable Release
 
@@ -183,9 +183,9 @@ Possibili funzionalità future (v1.1.0+):
 
 Ceramica è stato sviluppato utilizzando un approccio collaborativo uomo-AI:
 
-- **Concezione e Design:** nemorino60
+- **Concezione e Design:** nemorino1960
 - **Implementazione Assistita:** GitHub Copilot + Claude 3.5 Sonnet
-- **Decisioni e Validazione:** nemorino60
+- **Decisioni e Validazione:** nemorino1960
 
 Questo rappresenta un esempio di **AI-assisted development** moderno, dove:
 - L'autore fornisce: visione, architettura, decisioni, creatività
@@ -215,7 +215,7 @@ E strumenti AI:
 
 ## 📜 License
 
-MIT License - Copyright (c) 2025 nemorino60
+MIT License - Copyright (c) 2025 nemorino1960
 
 Sentiti libero di usare, modificare e distribuire Ceramica!
 

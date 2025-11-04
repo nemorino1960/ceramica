@@ -5,6 +5,21 @@ Tutte le modifiche significative a questo progetto saranno documentate in questo
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/it/1.0.0/),
 e questo progetto aderisce al [Semantic Versioning](https://semver.org/lang/it/).
 
+## [1.0.1] - 2025-11-04
+
+### 🐛 Bugfix
+
+#### Correzioni
+- **Account GitHub corretto**: Tutti i riferimenti da `nemorino60` a `nemorino1960`
+  - URL repository: `https://github.com/nemorino1960/ceramica`
+  - Badge nel README
+  - Link nella documentazione
+  - Issue templates
+  - Copyright e licenza
+  - Config.json e metadati
+- **Versione aggiornata**: Build system ora riporta correttamente v1.0.1
+- **Autore corretto**: Tutti i riferimenti all'autore aggiornati
+
 ## [1.0.0] - 2025-11-03
 
 ### 🎉 Rilascio Iniziale
@@ -100,12 +115,12 @@ Prima versione stabile di **Ceramica - Static Site Generator**.
 - `.gitignore` - File da escludere dal version control
 
 ### 👤 Autore
-- **nemorino60**
+- **nemorino1960**
 
 ### 🤖 Sviluppo
 Questo progetto è stato sviluppato con l'assistenza di AI (GitHub Copilot + Claude 3.5 Sonnet) 
 per accelerare l'implementazione. L'architettura, le decisioni di design e la direzione 
-del progetto sono di nemorino60. L'AI è stata utilizzata come strumento di sviluppo avanzato, 
+del progetto sono di nemorino1960. L'AI è stata utilizzata come strumento di sviluppo avanzato, 
 fornendo codice e documentazione sotto la guida e supervisione dell'autore.
 
 ### 📝 Note di Rilascio
@@ -115,14 +130,14 @@ Il progetto è completo, testato e pronto per l'uso in produzione.
 
 Il nome "Ceramica" richiama l'arte della ceramica: come un artigiano trasforma 
 l'argilla grezza in opere d'arte, Ceramica trasforma il Markdown in siti web eleganti. 
-Questa metafora si estende anche al processo di sviluppo: l'artigiano (nemorino60) 
+Questa metafora si estende anche al processo di sviluppo: l'artigiano (nemorino1960) 
 usa strumenti moderni (AI) per dare forma alla sua visione.
 
 ### 🔗 Link
-- Repository: https://github.com/nemorino60/ceramica
-- Documentazione: https://github.com/nemorino60/ceramica/tree/main/docs
-- Issues: https://github.com/nemorino60/ceramica/issues
-- Releases: https://github.com/nemorino60/ceramica/releases
+- Repository: https://github.com/nemorino1960/ceramica
+- Documentazione: https://github.com/nemorino1960/ceramica/tree/main/docs
+- Issues: https://github.com/nemorino1960/ceramica/issues
+- Releases: https://github.com/nemorino1960/ceramica/releases
 
 ---
 
@@ -143,4 +158,5 @@ Il progetto segue il [Semantic Versioning](https://semver.org/lang/it/):
 - **Fix** - Correzione bug
 - **Sicurezza** - Vulnerabilità corrette
 
-[1.0.0]: https://github.com/nemorino60/ceramica/releases/tag/v1.0.0
+[1.0.1]: https://github.com/nemorino1960/ceramica/releases/tag/v1.0.1
+[1.0.0]: https://github.com/nemorino1960/ceramica/releases/tag/v1.0.0

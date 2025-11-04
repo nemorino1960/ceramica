@@ -6,9 +6,9 @@ Il progetto **Ceramica v1.0.0** è ora completamente pronto per essere pubblicat
 
 ### Account e Repository
 
-- **Account:** nemorino60
-- **Repository:** https://github.com/nemorino60/ceramica
-- **Pages URL:** https://nemorino60.github.io/ceramica (dopo setup)
+- **Account:** nemorino1960
+- **Repository:** https://github.com/nemorino1960/ceramica
+- **Pages URL:** https://nemorino1960.github.io/ceramica (dopo setup)
 
 ## 📋 File GitHub Aggiunti
 
@@ -35,11 +35,11 @@ Il progetto **Ceramica v1.0.0** è ora completamente pronto per essere pubblicat
 ## 🔗 Link Verificati
 
 Tutti i link nella documentazione puntano correttamente a:
-- ✅ `https://github.com/nemorino60/ceramica` - Repository
-- ✅ `https://github.com/nemorino60/ceramica/issues` - Issues
-- ✅ `https://github.com/nemorino60/ceramica/releases` - Releases
-- ✅ `https://github.com/nemorino60/ceramica/discussions` - Discussions
-- ✅ `https://nemorino60.github.io/ceramica` - GitHub Pages (dopo setup)
+- ✅ `https://github.com/nemorino1960/ceramica` - Repository
+- ✅ `https://github.com/nemorino1960/ceramica/issues` - Issues
+- ✅ `https://github.com/nemorino1960/ceramica/releases` - Releases
+- ✅ `https://github.com/nemorino1960/ceramica/discussions` - Discussions
+- ✅ `https://nemorino1960.github.io/ceramica` - GitHub Pages (dopo setup)
 
 ## 🚀 Prossimi Passi
 
@@ -60,7 +60,7 @@ git commit -m "Initial commit: Ceramica v1.0.0"
 
 ### 3. Push al Repository
 ```bash
-git remote add origin https://github.com/nemorino60/ceramica.git
+git remote add origin https://github.com/nemorino1960/ceramica.git
 git branch -M main
 git push -u origin main
 ```
@@ -187,7 +187,7 @@ Dopo la pubblicazione, considera di:
 Segui la guida in `docs/GITHUB_SETUP.md` per pubblicare.
 
 Una volta pubblicato:
-- ⭐ Condividi: https://github.com/nemorino60/ceramica
+- ⭐ Condividi: https://github.com/nemorino1960/ceramica
 - 📢 Annuncia su social/community
 - 📝 Considera di registrare su:
   - [PyPI](https://pypi.org/) (per `pip install ceramica`)

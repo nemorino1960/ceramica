@@ -4,8 +4,8 @@ description: Descrizione del primo progetto
 template: project.html
 status: attivo
 tech: Python, Markdown, Jinja2
-github: https://github.com/nemorino60/ceramica
-demo: https://nemorino60.github.io/ceramica
+github: https://github.com/nemorino1960/ceramica
+demo: https://nemorino1960.github.io/ceramica
 ---
 
 # Progetto 1: Ceramica
