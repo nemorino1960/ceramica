@@ -41,3 +41,9 @@ htmlcov/
 
 # Logs
 *.log
+
+# Chat Sessions e Note Private
+CHAT_SESSION_*.md
+chat_*.md
+notes_private/
+.private/
